@@ -6,15 +6,11 @@ We wish to design a discrete-time lowpass filter with the following specificatio
 - **Stopband** defined by frequency ωₛ = 0.30π  
 - **Maximum ripple in the passband** defined by:
 
-  \[
-  R_p = -20 \log_{10} \frac{1 - \delta_1}{1 + \delta_1} = 1.00 \text{ dB}
-  \]
+  $R_p = -20 \log_{10} \frac{1 - \delta_1}{1 + \delta_1} = 1.00 \text{ dB}$
 
 - **Maximum ripple in the stopband** defined by:
 
-  \[
-  A_s = -20 \log_{10} \frac{\delta_2}{1 + \delta_1} = 40.00 \text{ dB}
-  \]
+  $A_s = -20 \log_{10} \frac{\delta_2}{1 + \delta_1} = 40.00 \text{ dB} $
 
 ---
 
