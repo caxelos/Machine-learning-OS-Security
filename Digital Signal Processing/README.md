@@ -16,11 +16,8 @@ We wish to design a discrete-time lowpass filter with the following specificatio
 
 ## Tasks
 
-### A1. 
-Design the desired filter as an **FIR filter** using a **Hamming window**.
-
-### A2. 
-Also design the filter as an **IIR Butterworth filter** using the **bilinear transform**.
+* Design the desired filter as an **FIR filter** using a **Hamming window**.
+* Also design the filter as an **IIR Butterworth filter** using the **bilinear transform**.
 
 ---
 
