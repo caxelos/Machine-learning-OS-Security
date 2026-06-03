@@ -136,7 +136,7 @@ A known limitation of SJF is that newly arriving short jobs can continuously pre
 
 ## Performance Results
 
-### Different Execution Times — All Interactive Processes
+### Different Execution Times (in scheduler ticks)— All Interactive Processes
 
 | Metric | With WaitingInRQ | Without WaitingInRQ |
 |---------|---------|---------|
@@ -158,7 +158,7 @@ A known limitation of SJF is that newly arriving short jobs can continuously pre
 
 | Metric | With WaitingInRQ | Without WaitingInRQ |
 |---------|---------|---------|
-| Average Turnaround Time | 3233 | 3361 |
+| Average Turnaround Time  | 3233 | 3361 |
 
 ### Increasing Execution Times
 
