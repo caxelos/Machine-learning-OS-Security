@@ -53,23 +53,6 @@ id: 1, name: init
 * Kernel logging (`printk`)
 * Kernel recompilation and installation
 
-### User-Space Integration
-
-A lightweight wrapper library was created to expose the new system call to user-space applications.
-
-Files:
-
-```text
-roots.c
-roots.h
-libroots.a
-find_roots_lib.c
-```
-
-The test application links against the wrapper library and demonstrates invocation of the custom system call from user space.
-
----
-
 ## Part 2: Custom I/O Scheduler Module
 
 ### Objective
@@ -92,15 +75,6 @@ printk("In custom_noop_dispatch function\n");
 ```
 
 This message is emitted whenever the scheduler dispatches an I/O request, allowing verification that the modified scheduler is actively handling disk operations.
-
-### Kernel Concepts Used
-
-* Loadable Kernel Modules (LKM)
-* Block layer architecture
-* Elevator framework
-* I/O scheduling
-* Module loading and unloading
-* Kernel logging and debugging
 
 ### Testing Procedure
 
@@ -149,20 +123,7 @@ sudo rmmod custom-iosched
 
 ---
 
-## Learning Outcomes
 
-Through this project I gained practical experience with:
-
-* Linux kernel architecture
-* Kernel-space vs user-space execution
-* Process management internals
-* Custom system call implementation
-* Linux kernel compilation
-* Loadable kernel modules
-* I/O scheduler infrastructure
-* Kernel debugging using `printk` and `dmesg`
-
----
 
 ## Technologies
 
@@ -174,7 +135,3 @@ Through this project I gained practical experience with:
 * Linux Kernel Build System (kbuild)
 
 ---
-
-## Notes
-
-This project was developed for educational and research purposes to explore Linux kernel development workflows and low-level operating system concepts.

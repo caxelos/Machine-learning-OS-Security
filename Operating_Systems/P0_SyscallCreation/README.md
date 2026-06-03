@@ -7,8 +7,6 @@ This project explores Linux kernel internals through two practical modifications
 1. Implementing a custom system call inside the Linux kernel.
 2. Modifying and deploying a custom I/O scheduler kernel module.
 
-The goal was to gain hands-on experience with kernel-space development, process management, kernel compilation, module loading, and Linux I/O scheduling mechanisms.
-
 ---
 
 ## Part 1: Custom System Call — `find_roots()`
@@ -122,8 +120,6 @@ sudo rmmod custom-iosched
 ```
 
 ---
-
-
 
 ## Technologies
 
