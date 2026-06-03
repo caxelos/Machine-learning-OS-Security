@@ -132,6 +132,100 @@ A known limitation of SJF is that newly arriving short jobs can continuously pre
 ---
 
 
+---
+
+## Performance Results
+
+### Different Execution Times — All Interactive Processes
+
+| Metric | With WaitingInRQ | Without WaitingInRQ |
+|---------|---------|---------|
+| Average Turnaround Time | 2898 | 3029 |
+
+### Different Execution Times — Mixed Workload
+
+| Metric | With WaitingInRQ | Without WaitingInRQ |
+|---------|---------|---------|
+| Average Turnaround Time | 1718 | 2081 |
+
+### Equal Execution Times — All Non-Interactive
+
+| Metric | With WaitingInRQ | Without WaitingInRQ |
+|---------|---------|---------|
+| Average Turnaround Time | 2308 | 2388 |
+
+### Equal Execution Times — All Interactive
+
+| Metric | With WaitingInRQ | Without WaitingInRQ |
+|---------|---------|---------|
+| Average Turnaround Time | 3233 | 3361 |
+
+### Increasing Execution Times
+
+| Metric | With WaitingInRQ | Without WaitingInRQ |
+|---------|---------|---------|
+| Average Turnaround Time | 10500 | 9558 |
+
+### Decreasing Execution Times
+
+| Metric | With WaitingInRQ | Without WaitingInRQ |
+|---------|---------|---------|
+| Average Turnaround Time | 1168 | 1278 |
+
+---
+
+## Key Findings
+
+### 1. Waiting-Time Awareness Improves Fairness
+
+In most workload configurations, incorporating the **WaitingInRQ** factor reduced the average turnaround time and improved scheduling fairness.
+
+### 2. Workload Characteristics Matter
+
+The scheduler's effectiveness varied significantly depending on process execution patterns:
+
+- Mixed workloads benefited greatly from WaitingInRQ.
+- Equal-length workloads produced relatively stable results.
+- Increasing execution-time profiles sometimes favored the standard SJF implementation.
+
+### 3. Starvation Remains a Core Challenge
+
+A known limitation of SJF scheduling is **starvation**.
+
+When shorter jobs continuously arrive, they are repeatedly selected before longer-running processes. As a result, some processes may experience excessive waiting times or indefinite postponement.
+
+### 4. Trade-Off Between Efficiency and Fairness
+
+The experiments demonstrate the classic scheduling trade-off:
+
+- Pure SJF tends to optimize turnaround time.
+- Waiting-time-aware scheduling improves fairness.
+- The optimal approach depends on workload characteristics and system goals.
+
+---
+
+## Technologies Used
+
+- C
+- Linux
+- Operating System Scheduling Concepts
+- Process Scheduling Simulation
+- Performance Evaluation and Benchmarking
+
+---
+
+## Repository Structure
+
+```text
+P1_SJF_scheduler/
+│
+├── configs/
+├── src/
+├── results/
+└── README.md
+```
+
+---
 
 ## Results Summary
 
