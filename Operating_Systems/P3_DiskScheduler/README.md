@@ -32,6 +32,34 @@ The scheduler manages disk requests by:
 
 The scheduler is validated through controlled disk I/O experiments that demonstrate requests are serviced in the expected C-LOOK order.
 
+
+## Build & Execution Instructions
+
+### Compiling the Reader Program
+
+The `read.c` source file was compiled using:
+
+```bash
+gcc read.c -o read
+```
+
+### Executing the Reader Program
+
+Run the executable with:
+
+```bash
+./read
+```
+
+### Executing the Writer Program
+
+The Python script was executed and its output was redirected to a file named `demo`:
+
+```bash
+python write.py > demo
+```
+
+
 ## Deliverables
 
 * Linux kernel patch (`patch_4`)
