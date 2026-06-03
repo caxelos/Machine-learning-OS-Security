@@ -33,6 +33,4 @@ The goal of the project is to evaluate whether the Best-Fit strategy can reduce 
 4. Build and run the user-space test application.
 5. Use the provided system calls to collect and compare memory allocation statistics.
 
-## Authors
 
-Group 9 – Operating Systems Project 3
