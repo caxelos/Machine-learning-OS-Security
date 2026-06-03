@@ -1,11 +1,3 @@
-#######################################
-# 
-# Operating Systems Lab
-# 
-# Project 02 Makefile Template
-#
-#######################################
-
 # The C compiler
 CC = gcc
 
