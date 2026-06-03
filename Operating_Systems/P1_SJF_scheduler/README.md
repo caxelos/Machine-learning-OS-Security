@@ -6,7 +6,7 @@
 
 
 
-This project explores the behavior of a \*\*preemptive Shortest Job First (SJF)\*\* CPU scheduling algorithm under different workload scenarios.
+This project explores the behavior of a **preemptive Shortest Job First (SJF)** CPU scheduling algorithm under different workload scenarios.
 
 
 
@@ -14,7 +14,7 @@ The objective is to analyze how process characteristics affect scheduling decisi
 
 
 
-The scheduler's performance is evaluated using \*\*Average Turnaround Time (ATT)\*\* while also examining fairness and starvation-related issues.
+The scheduler's performance is evaluated using **Average Turnaround Time (ATT)** while also examining fairness and starvation-related issues.
 
 
 
@@ -129,7 +129,7 @@ A known limitation of SJF is that newly arriving short jobs can continuously pre
 
 
 
-\---
+---
 
 
 
@@ -145,15 +145,15 @@ This highlights the classic operating-system scheduling trade-off between:
 
 
 
-\* Maximum throughput
+* Maximum throughput
 
-\* Low turnaround time
+* Low turnaround time
 
-\* Fairness among processes
+* Fairness among processes
 
 
 
-\---
+---
 
 
 
@@ -173,7 +173,7 @@ This highlights the classic operating-system scheduling trade-off between:
 
 
 
-\---
+---
 
 
 
