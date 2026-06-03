@@ -1,11 +1,38 @@
-Kontomitros Christos, 1798, ckontomitros@inf.uth.gr
-Athanasiadis Ioannis, 1844, iathanasiadis@inf.uth.gr
-Axelos Christos,  1814, caxelos@inf.uth.gr 
+# Machine Learning OS Security – Project 3 (Group 9)
 
-Για την μεταγλώττιση του module κάνουμε απλά make στο project1_module
+## Overview
 
-Για την μεταγλώττιση της βιβλιοθήκης κάναμε:
+This project modifies the Linux SLOB (Simple List Of Blocks) memory allocator to reduce external memory fragmentation. The default allocation strategy (First-Fit / Next-Fit) was replaced with a Best-Fit approach for both page and block selection.
 
-gcc -c free_total.c -o free_total.o
-ar  rcs libfree_total.a   free_total.o
-gcc -static check_mem.c -L.   -lfree_total  -o ektelesimo
+## Features
+
+* Implementation of the Best-Fit allocation algorithm in the SLOB allocator.
+* Runtime logging of allocation decisions and candidate memory blocks.
+* Custom system calls for memory statistics:
+
+  * Total allocated memory.
+  * Total free memory.
+* Comparison framework between the original and modified allocator.
+
+## Objectives
+
+The goal of the project is to evaluate whether the Best-Fit strategy can reduce external fragmentation compared to the original SLOB implementation.
+
+## Project Structure
+
+* Modified Linux kernel source code (SLOB allocator).
+* User-space application for collecting allocator statistics.
+* Experimental results and observations.
+* Patch files containing kernel modifications.
+
+## Build & Usage
+
+1. Apply the provided patch to a Linux 2.6.37.2 kernel source tree.
+2. Enable the SLOB allocator in the kernel configuration.
+3. Compile and install the modified kernel.
+4. Build and run the user-space test application.
+5. Use the provided system calls to collect and compare memory allocation statistics.
+
+## Authors
+
+Group 9 – Operating Systems Project 3
