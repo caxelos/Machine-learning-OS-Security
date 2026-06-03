@@ -1,8 +1,8 @@
-\# Preemptive SJF Scheduler Analysis
+# Preemptive SJF Scheduler Analysis
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -18,39 +18,33 @@ The scheduler's performance is evaluated using \*\*Average Turnaround Time (ATT)
 
 
 
-\---
+---
 
 
 
-\## Features
+## Features
 
 
 
-\* Preemptive SJF scheduling simulation
+* Preemptive SJF scheduling simulation
 
-\* Interactive and non-interactive process workloads
+* Interactive and non-interactive process workloads
 
-\* Support for multiple scheduling profiles
+* Support for multiple scheduling profiles
 
-\* Comparison of scheduling behavior with and without waiting-time prioritization
+* Comparison of scheduling behavior with and without waiting-time prioritization
 
-\* Performance evaluation through turnaround-time measurements
+* Performance evaluation through turnaround-time measurements
 
-\* Analysis of starvation and fairness trade-offs
-
-
-
-\---
+* Analysis of starvation and fairness trade-offs
 
 
 
-\## Experiment Profiles
+---
 
-
+## Experiment Profiles
 
 The following workload configurations were used:
-
-
 
 | Profile                 | Description                                                            |
 
@@ -70,11 +64,11 @@ The following workload configurations were used:
 
 
 
-\---
+---
 
 
 
-\## Evaluation Metric
+## Evaluation Metric
 
 
 
@@ -82,7 +76,7 @@ The primary metric used for evaluation is \*\*Average Turnaround Time (ATT)\*\*:
 
 
 
-\[
+[
 
 ATT = \\frac{\\sum TurnaroundTime\_i}{N}
 
@@ -94,9 +88,9 @@ where:
 
 
 
-\* `TurnaroundTime\_i` is the completion time of process \*i\*.
+* `TurnaroundTime\_i` is the completion time of process \*i\*.
 
-\* `N` is the total number of processes.
+* `N` is the total number of processes.
 
 
 
@@ -104,15 +98,14 @@ Lower ATT values indicate better scheduling efficiency.
 
 
 
-\---
+---
+
+
+## Key Observations
 
 
 
-\## Key Observations
-
-
-
-\### Fairness vs Performance
+### Fairness vs Performance
 
 
 
@@ -120,7 +113,7 @@ The experiments show that introducing a waiting-time component can improve fairn
 
 
 
-\### Workload Sensitivity
+### Workload Sensitivity
 
 
 
@@ -128,7 +121,7 @@ Scheduler performance varies significantly depending on the execution-time distr
 
 
 
-\### Starvation in SJF
+### Starvation in SJF
 
 
 
@@ -140,7 +133,7 @@ A known limitation of SJF is that newly arriving short jobs can continuously pre
 
 
 
-\## Results Summary
+## Results Summary
 
 
 
@@ -164,19 +157,19 @@ This highlights the classic operating-system scheduling trade-off between:
 
 
 
-\## Technologies
+## Technologies
 
 
 
-\* Operating Systems concepts
+* Operating Systems concepts
 
-\* CPU Scheduling Algorithms
+* CPU Scheduling Algorithms
 
-\* Preemptive SJF Scheduling
+* Preemptive SJF Scheduling
 
-\* Performance Analysis
+* Performance Analysis
 
-\* Workload Simulation
+* Workload Simulation
 
 
 
@@ -188,23 +181,23 @@ This highlights the classic operating-system scheduling trade-off between:
 
 
 
-\* Comparison with Round Robin scheduling
+* Comparison with Round Robin scheduling
 
-\* Comparison with Priority Scheduling
+* Comparison with Priority Scheduling
 
-\* Visualization of scheduling timelines (Gantt Charts)
+* Visualization of scheduling timelines (Gantt Charts)
 
-\* Additional workload generators
+* Additional workload generators
 
-\* Statistical analysis of larger process sets
-
-
-
-\---
+* Statistical analysis of larger process sets
 
 
 
-\## License
+---
+
+
+
+## License
 
 
 
